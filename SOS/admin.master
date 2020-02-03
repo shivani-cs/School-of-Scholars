@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link href="adminstyle.css" rel="stylesheet" type="text/css" /> 
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="topContent">
+           <image src="SOS.bmp" alt="LOGO" width="250px" height="150px"> 
+            <!--<a href="a.aspx">Master Pages</a> -->
+        </div>
+    
+        <div id="horizontalNav">
+            <center>
+            <ul>
+               <li><a href="sregister.aspx" target="#mainContent">Student registration</a></li>
+               <li><a href="tregister.aspx" target="#mainContent">Teacher registration</a></li>   
+              <li> <a href="t_info.aspx"> Teacher Info</a></li>
+             <li> <a href="std_info.aspx"> Student Info</a></li>
+               <li><a href="p_info.aspx"> Parent Info</a></li> 
+                <li><a href="report.aspx">Notification</a></li>
+                 <li><a href="mail.aspx">Mail</a></li>
+                   <li><a href="a_logout.aspx">Logout</a></li>
+                
+            </ul>
+                </center>
+        </div>
+        
+        <div id="mainContent">
+            
+            <asp:ContentPlaceHolder id="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        
+        
+        <div id="footerContent">
+            <!--<img src="Images/PoweredByASPNET.gif" alt="Powered by ASP.NET!" />-->
+        </div>
+    </form>
+    
+</body>
+</html>

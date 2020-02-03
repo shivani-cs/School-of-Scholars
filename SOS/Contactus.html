@@ -1,0 +1,84 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *
+        {
+            color:white;
+        }
+        h2 {
+            color: red;
+            text-align: left;
+            margin-left: 180px;
+        }
+
+        .a1 {
+            width: 800px;
+            height: 800px;
+            border: 0px solid black;
+            margin: 50px;
+            font-size: 14px;
+            padding: 10px;
+            margin-left: 490px;
+            margin-top: 100px;
+            color: white;
+        }
+
+        h4 {
+            color: white;
+        }
+
+        .map {
+        }
+
+        .a12 {
+            margin-top: -780px;
+            margin-left: 120px;
+        }
+
+        h2 {
+            margin-left: -10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="a1">
+        <h1>Contact US</h1>
+        <p>
+            Thank You for your interest in Scholar School<br>
+            You can contact us as:<br>
+            <h4>
+                Main OFFICE ADDRESS:<br>
+                Scholar School<br>
+                Nigdi,<br>
+                Pune - 411 044<br>
+                India<br>
+                Ph: +91 (xx) xxxxxxxxx<br>
+                Fax: +91 (xx) xxxxxxxxxx<br>
+            </h4>
+        </p></center>
+    </div>
+
+    <div id="map" style="width:200px;height:200px;background:yellowgreen" class="a12"></div>
+
+    <script>
+        function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                center: new google.maps.LatLng(18.6515182, 73.76204830000006), zoom: 15
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChzIdwVTlIAOQ_Y7ldqm8eIQH4q43TR1Y&callback=myMap"
+            type="text/javascript"></script>
+
+</body>
+</html>
+
+

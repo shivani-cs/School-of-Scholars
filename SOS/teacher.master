@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="teacher.master.cs" Inherits="MasterPage3" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link href="otherstyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="topContent">
+        <image src="SOS.bmp" alt="LOGO" width="250px" height="150px"/> 
+    </div>
+
+    <div id="leftContent">
+        <ul>
+               <li> <a href="fileread.aspx">Books</a></li>
+               <li><a href="thomework.aspx">Homework</a></li>
+                <li><a href="tattend.aspx">Attendance</a></li>
+               <li><a href="texam.aspx">Test</a></li>
+               <li><a href="chat.aspx"> Chat</a></li>
+             
+            </ul>    
+    </div>
+
+    <div id="horizontalNav">
+    <ul>
+               <li><a href="tprofile.aspx"> Profile</a></li>
+              <li><a href="tmail.aspx"> Mail</a></li>
+               <li> <a href="t_logout.aspx">Logout</a></li>
+                
+     </ul>
+    </div>
+
+    <div id="mainContent">
+        <%--<iframe id="mainContent" height="500" width="600"   ></iframe>--%>
+            
+            <asp:ContentPlaceHolder id="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        </form>
+</body>
+</html>

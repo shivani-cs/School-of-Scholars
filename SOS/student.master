@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="student.master.cs" Inherits="MasterPage6" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link href="otherstyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="topContent">
+        <image src="SOS.bmp" alt="LOGO" width="250px" height="150px"/> 
+         <center><h1> School Of Scholars</h1>
+             <h5>A building with four walls and tomorrow inside</h5></center>
+         <h6> Contact Us : 9767254896 </h6>
+    </div>
+
+    <div id="leftContent">
+        <ul>
+               <li> <a href="sbooks.aspx">Books</a></li>
+               <li><a href="homework.aspx">Homework</a></li>
+                <li><a href="tt.aspx">Time Table</a></li>
+               <li><a href="p.aspx">Performance</a></li>
+               <li><a href="chat.aspx"> Chat</a></li>
+              <li> <a href="news.aspx"> News</a></li>
+            </ul>
+    </div>
+
+    <div id="horizontalNav">
+    <ul>
+               <li><a href="sprofile.aspx"> Profile</a></li>
+              <li><a href="smail.aspx"> Mail</a></li>
+               <li><a href="exam.aspx"> Exam</a></li>
+               <li> <a href="slogout.aspx">Logout</a></li>+
+                
+     </ul>
+    </div>
+    <div id="mainContent">
+        <asp:ContentPlaceHolder id="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+    </div>
+        </form>
+</body>
+</html>

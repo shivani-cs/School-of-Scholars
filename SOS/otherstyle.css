@@ -1,0 +1,114 @@
+﻿body {
+    font-family: Verdana;
+    font-size: medium;
+    margin: 0px;
+}
+
+#topContent {
+    height: 150px; 
+    margin-top: 0px ;
+    background:#a0f230;
+
+}
+
+#topContent h1 {
+    font-family:Castellar;
+    margin-top: -110px;
+    color:black;
+    font-size:50px;
+    
+}
+#topContent h5 {
+    margin-top: -40px;
+    color:black;
+    font-size:18px;
+    
+}
+
+#topContent h6 {
+    margin-top: -145px;
+    color:black;
+    font-size:14px;
+    text-align:right;
+    
+    
+    
+}
+
+
+#leftContent {
+    width: 198px; 
+    height: 550px; 
+    margin-top: 20px;
+}
+
+#horizontalNav {
+    margin-left: 16%; 
+    margin-top:-550px; 
+    height: 35px;
+}
+
+#mainContent {
+    margin-left: 16%; 
+    margin-top:1.5%; 
+    height: 498px;
+}
+
+
+#leftContent ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #333;
+    height: 100%; 
+   
+
+
+}
+#leftContent li{
+     float:left;
+    display:block;
+    padding-top: 10px;
+    margin-right:50px;
+    font-family:Verdana;
+}
+
+#leftContent li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+   
+}
+
+#leftContent li a:hover {
+    background-color: darkorange;
+    width:165px;
+}
+
+#horizontalNav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#horizontalNav li{
+    float:left;
+    
+}
+
+#horizontalNav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#horizontalNav li a:hover {
+    background-color: darkgreen;
+}
+
